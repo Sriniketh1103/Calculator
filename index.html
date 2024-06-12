@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <div class="calc-container">
+      
+    <div class="container">
+        <div class="light-darkcont ">
+         <button class="light-dark" 
+         value="light"
+         onclick="
+               toggledark()">
+          <img src="images/moon.png" alt="dark" class="img-lightdark">
+           </button>
+        </div>
+       
+        
+        <div class="screen">
+            
+            <input type="text" name="disabled-keyboard--input" class="display" value="0" disabled>
+            <div class="resultscreen">
+               <p class="result"></p>
+            </div>
+            
+            
+
+
+            
+            
+            
+
+        </div>
+      <div class="buttons">
+        <div class="row">
+            <button class="AC light-button" value="AC" 
+            onclick="
+             calculate('AC')
+                ">Ac</button>
+            <button class="( light-button"
+            onclick="
+            calculate('(')
+               ">(</button>
+            <button class=") light-button"  
+            onclick="
+            calculate(')')
+               ">)</button>
+            <button class="div light-button" 
+            onclick="
+            calculate('/')
+
+           
+               ">
+               /</button>
+        </div>
+        <div class="row">
+            <button class="7 light-button"
+            onclick="
+             calculate('7')
+                ">7</button>
+            <button class="8 light-button"
+            onclick="
+            calculate('8')
+               ">8</button>
+            <button class="9 light-button"
+            onclick="
+            calculate('9')
+               ">9</button>
+            <button class="mul light-button"
+            onclick="
+            calculate('*')
+               ">*</button>
+        </div>
+        <div class="row">
+            <button class="4 light-button"
+            onclick="
+            calculate('4')
+               ">4</button>
+            <button class="5 light-button"
+            onclick="
+            calculate('5')
+               ">5</button>
+            <button class="6 light-button"
+            onclick="
+            calculate('6')
+               ">6</button>
+            <button class="sub light-button"
+            onclick="
+            calculate('-')
+               ">-</button>
+        </div>
+        <div class="row">
+            <button class="1 light-button"
+            onclick="
+            calculate('1')
+               ">1</button>
+            <button class="2 light-button"
+            onclick="
+            calculate('2')
+               ">2</button>
+            <button class="3 light-button"
+            onclick="
+            calculate('3')
+               ">3</button>
+            <button class="add light-button"
+            onclick="
+            calculate('+')
+               "> +</button>
+        </div>
+        <div class="row">
+            <button class="zero light-button"
+            onclick="
+            calculate('0')
+               ">0</button>
+            <button class=". light-button"
+            onclick="
+            calculate('.')
+               ">.</button>
+            <button class="C light-button"
+            onclick="
+            calculate('C')
+               ">C</button>
+            <button class="equals light-button"
+            onclick=" 
+            calculate('=')
+               ">=</button>
+         </div>
+        </div>
+
+
+
+
+
+    </div>
+
+   </div>
+</body>
+<script src="script.js"></script>
+</html>
